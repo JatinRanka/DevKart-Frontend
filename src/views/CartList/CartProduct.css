@@ -1,0 +1,9 @@
+.basic-card__body .footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footer .btn {
+	margin: 0rem 1rem;
+}
