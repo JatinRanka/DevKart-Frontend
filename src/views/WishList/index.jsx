@@ -1,5 +1,5 @@
 import React from "react";
-import Product from "../../components/Product";
+import { Product } from "../../components";
 import { useCart } from "../../context/cart";
 import emptyWishlistImage from "../../assets/images/empty-wishlist.svg";
 import "./index.css";

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Product from "../../components/Product";
+import { Product } from "../../components";
 import Filter from "./Filter";
 import { useCart } from "../../context/cart";
 import "./index.css";

@@ -5,24 +5,21 @@ import {
   SET_CARTLIST,
   SET_WISHLIST,
 } from "./context/cart";
-import Login from "./views/Login";
-import SignUp from "./views/Signup";
-import ProductsList from "./views/ProductsList";
-import WishList from "./views/WishList";
-import CartList from "./views/CartList";
-import NavBar from "./components/NavBar";
 import {
-  Route,
-  BrowserRouter as Router,
-  Switch,
-  Redirect,
-} from "react-router-dom";
+  Login,
+  SignUp,
+  ProductsList,
+  WishList,
+  CartList,
+  ProductPage,
+} from "./views";
+import { NavBar } from "./components";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { fetchApi, getUserId, isUserLoggedIn, ProtectedRoute } from "./helper";
 import { toast } from "./helper/toast";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./styles.css";
-import ProductPage from "./views/ProductPage";
 
 export default function App() {
   const { dispatch } = useCart();
