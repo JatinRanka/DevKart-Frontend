@@ -13,7 +13,7 @@ const ProductPage = () => {
   const { productId } = useParams();
   const [isPageLoading, setIsPageLoading] = useState(false);
   const [isButtonLoading, setIsButtonLoading] = useState(false);
-  const [product, setProduct] = useState(null);
+  const [product, setProduct] = useState([]);
 
   const { state, dispatch } = useCart();
   const { wishlist, cartList } = state;

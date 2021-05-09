@@ -4,7 +4,7 @@ import { useCart } from "../../context/cart";
 import emptyWishlistImage from "../../assets/images/empty-wishlist.svg";
 import "./index.css";
 
-const renderEmptyWishlist = () => {
+const EmptyWishlist = () => {
   return (
     <div className="empty-wish-list-container">
       <img className="empty-wish-list-img" src={emptyWishlistImage} />
@@ -19,16 +19,15 @@ const WishList = () => {
 
   return (
     <div className="wish-list">
-      {!wishlist || wishlist.length === 0
-        ? renderEmptyWishlist()
-        : wishlist?.map((productDetails) => {
-            return (
-              <Product
-                key={productDetails._id}
-                productDetails={productDetails}
-              />
-            );
-          })}
+      {!wishlist || wishlist.length === 0 ? (
+        <EmptyWishlist />
+      ) : (
+        wishlist?.map((productDetails) => {
+          return (
+            <Product key={productDetails._id} productDetails={productDetails} />
+          );
+        })
+      )}
     </div>
   );
 };
