@@ -1,19 +1,19 @@
-import axios from "axios";
-const API_BASE_ENDPOINT = "https://devkart-backend.herokuapp.com/api";
+import axios from 'axios';
+const API_BASE_ENDPOINT = 'https://devkart-backend.herokuapp.com/api';
 
-export const fetchApi = async ({ url, method = "get", data = null }) => {
-  try {
-    const response = await axios({
-      method,
-      url: API_BASE_ENDPOINT + url,
-      data,
-    });
-    return response.data;
-  } catch (error) {
-    const message =
-      error?.response?.data?.message ||
-      error?.message ||
-      "Some error occurred. Try again after some time.";
-    throw new Error(message);
-  }
+export const fetchApi = async ({ url, method = 'get', data = null }) => {
+	try {
+		const response = await axios({
+			method,
+			url: API_BASE_ENDPOINT + url,
+			data
+		});
+		return response.data;
+	} catch (error) {
+		const message =
+			error?.response?.data?.message ||
+			error?.message ||
+			'Some error occurred. Try again after some time.';
+		throw new Error(message);
+	}
 };

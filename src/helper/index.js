@@ -1,11 +1,5 @@
-import { fetchApi } from "./fetchApi";
-import { ProtectedRoute } from "./ProtectedRoute";
-import { isUserLoggedIn, redirectToLoginPage, getUserId } from "./utils";
+import { fetchApi } from './fetchApi';
+import { ProtectedRoute } from './ProtectedRoute';
+import { isUserLoggedIn, redirectToLoginPage, getUserId } from './utils';
 
-export {
-  fetchApi,
-  ProtectedRoute,
-  isUserLoggedIn,
-  redirectToLoginPage,
-  getUserId,
-};
+export { fetchApi, ProtectedRoute, isUserLoggedIn, redirectToLoginPage, getUserId };

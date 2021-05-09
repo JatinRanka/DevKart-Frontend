@@ -1,35 +1,35 @@
 .login-outer-container {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .login-inner-container {
-  width: max-content;
-  padding: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 1rem;
-  position: absolute;
-  top: 20%;
+	width: max-content;
+	padding: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 1rem;
+	position: absolute;
+	top: 20%;
 }
 
 .login-heading {
-  margin-bottom: 4rem;
+	margin-bottom: 4rem;
 }
 
 .input-container {
-  margin-bottom: 3rem;
+	margin-bottom: 3rem;
 }
 
 .login-btn {
-  margin: 0rem auto;
+	margin: 0rem auto;
 }
 
 .new-user-text {
-  margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 @media only screen and (max-width: 500px) {
-  .login-inner-container {
-    padding: 1rem;
-  }
+	.login-inner-container {
+		padding: 1rem;
+	}
 }
