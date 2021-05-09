@@ -1,69 +1,69 @@
 .filter {
-	min-width: 20%;
-	border-right: solid 2px lightgray;
-	box-sizing: border-box;
+  min-width: 20%;
+  border-right: solid 2px lightgray;
+  box-sizing: border-box;
 }
 
 .heading {
-	text-align: left;
-	margin: 0.5rem 0.5rem;
+  text-align: left;
+  margin: 0.5rem 0.5rem;
 }
 
 .filter__title {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .filter__title p {
-	width: max-content;
-	text-transform: uppercase;
+  width: max-content;
+  text-transform: uppercase;
 }
 
 .filter__title .clear-all {
-	border-bottom: solid 2px var(--primary-color);
-	cursor: pointer;
+  border-bottom: solid 2px var(--primary-color);
+  cursor: pointer;
 }
 
 .filter__title .clear-all:hover {
-	color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .filter-toggle-btn {
-	display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {
-	.filter {
-		position: fixed;
-		z-index: 2;
-		height: max-content;
-		width: 100%;
-		background-color: #f9fafb;
-		bottom: 0px;
-		left: 0px;
-		padding: 2rem 1rem 4rem 1rem;
-		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
-			rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
-			rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	}
+  .filter {
+    position: fixed;
+    z-index: 2;
+    height: max-content;
+    width: 100%;
+    background-color: #f9fafb;
+    bottom: 0px;
+    left: 0px;
+    padding: 2rem 1rem 4rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
 
-	.filter-show {
-		display: block;
-	}
+  .filter-show {
+    display: block;
+  }
 
-	.filter-hide {
-		display: none;
-	}
+  .filter-hide {
+    display: none;
+  }
 
-	.filter-toggle-btn {
-		display: block;
-		z-index: 3;
-		position: fixed;
-		bottom: 10px;
-		right: 10px;
-		line-height: 0;
-		border-radius: 50%;
-	}
+  .filter-toggle-btn {
+    display: block;
+    z-index: 3;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    line-height: 0;
+    border-radius: 50%;
+  }
 }

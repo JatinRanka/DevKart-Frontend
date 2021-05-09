@@ -1,66 +1,66 @@
 .navbar__link-active {
-	border-bottom: solid 4px white;
-	font-size: 1.1em;
+  border-bottom: solid 4px white;
+  font-size: 1.1em;
 }
 
 .menu-icon {
-	display: none;
-	cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 .navbar-close-icon-container {
-	display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 500px) {
-	.menu-icon {
-		display: inline-block;
-	}
+  .menu-icon {
+    display: inline-block;
+  }
 
-	.navbar-close-icon-container.show {
-		display: block;
-		position: fixed;
-		top: 1rem;
-		right: 1rem;
-		z-index: 4;
-		cursor: pointer;
-	}
+  .navbar-close-icon-container.show {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 4;
+    cursor: pointer;
+  }
 
-	.navbar-close-icon {
-		font-size: 3rem;
-		color: black;
-	}
+  .navbar-close-icon {
+    font-size: 3rem;
+    color: black;
+  }
 
-	.navbar__link-container-hide {
-		display: none;
-	}
+  .navbar__link-container-hide {
+    display: none;
+  }
 
-	.navbar__link-container-show {
-		display: block;
-	}
+  .navbar__link-container-show {
+    display: block;
+  }
 
-	.navbar__link-container.show {
-		position: fixed !important;
-		width: 70vw;
-		height: 100vh;
-		top: 0px;
-		right: 0px;
-		z-index: 3;
-		background-color: white;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		font-size: 2rem;
-		row-gap: 2rem;
-		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-	}
+  .navbar__link-container.show {
+    position: fixed !important;
+    width: 70vw;
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+    z-index: 3;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    row-gap: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
 
-	.navbar__link {
-		color: black;
-	}
+  .navbar__link {
+    color: black;
+  }
 
-	.navbar__link-active {
-		border-bottom: solid 4px black;
-		font-size: 2.4rem;
-	}
+  .navbar__link-active {
+    border-bottom: solid 4px black;
+    font-size: 2.4rem;
+  }
 }
