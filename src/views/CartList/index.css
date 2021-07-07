@@ -1,0 +1,21 @@
+.cart-list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	align-items: center;
+	margin: 1rem 0rem;
+}
+
+.empty-cart-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5%;
+}
+
+.empty-cart-img {
+	width: 70%;
+	max-width: 300px;
+	margin: 0rem 2rem 2rem 2rem;
+}
